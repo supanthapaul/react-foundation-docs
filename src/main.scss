@@ -15,6 +15,8 @@ $body-font-family: 'Hind', sans-serif;
 
 $topbar-background: #222;
 
+@include foundation-flex-grid;
+@include foundation-flex-classes;
 @include foundation-everything;
 
 @import "components/home/home";
