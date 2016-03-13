@@ -3,7 +3,8 @@ import {
   Row,
   Column,
   Progress,
-  ProgressColors
+  ProgressColors,
+  NativeProgress
 } from 'react-foundation';
 
 export const ProgressBarDocs = () => (
@@ -26,6 +27,14 @@ export const ProgressBarDocs = () => (
         <div>
           <h3>With Text</h3>
           <Progress meter={{ text: '25%' }} tabIndex="0" min={0} max={100} value={25} valueText="25 percent"/>
+        </div>
+        <div>
+          <h3>Native Progress</h3>
+          <NativeProgress max={100} value={75}/>
+          <NativeProgress color={ProgressColors.SECONDARY} max={100} value={75}/>
+          <NativeProgress color={ProgressColors.SUCCESS} max={100} value={75}/>
+          <NativeProgress color={ProgressColors.WARNING} max={100} value={75}/>
+          <NativeProgress color={ProgressColors.ALERT} max={100} value={75}/>
         </div>
       </Column>
     </Row>
