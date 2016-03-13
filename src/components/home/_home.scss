@@ -1,0 +1,27 @@
+.home {
+  .hero {
+    background: #2d2d2d;
+    height: 300px;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  h2 {
+    color: $secondary-color;
+  }
+
+  .mission {
+    color: #fff;
+    font-size: rem-calc(18);
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    margin-top: 50px;
+  }
+
+  .content {
+    padding: 40px 0;
+  }
+}

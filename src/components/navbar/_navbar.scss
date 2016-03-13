@@ -1,0 +1,14 @@
+.navbar {
+  .top-bar-title {
+    padding-top: 7px;
+
+    > a {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+  }
+
+  .menu > li > a {
+    color: #fff;
+  }
+}
