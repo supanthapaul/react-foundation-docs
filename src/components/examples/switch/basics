@@ -1,0 +1,3 @@
+<div className="switch-basics-example">
+  <Switch/>
+</div>

@@ -17,7 +17,6 @@ import BadgeDocs from '../docs/badge';
 import FlexVideoDocs from '../docs/flex-video';
 import LabelDocs from '../docs/label';
 import ProgressBarDocs from '../docs/progress-bar';
-import ThumbnailDocs from '../docs/thumbnail';
 
 export const Home = () => (
   <div className="home">
@@ -45,7 +44,6 @@ export const Home = () => (
       <FlexVideoDocs/>
       <LabelDocs/>
       <ProgressBarDocs/>
-      <ThumbnailDocs/>
     </div>
   </div>
 );

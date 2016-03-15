@@ -1,11 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Hind);
+@import url(//fonts.googleapis.com/css?family=Montserrat|Hind|Roboto+Mono);
+@import url(//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css);
 
 @import "../node_modules/foundation-sites/scss/foundation";
 
 $header-font-family: 'Montserrat', sans-serif;
 $body-font-family: 'Hind', sans-serif;
+$font-family-monospace: 'Roboto Mono', sans-serif;
 
 $topbar-background: #222;
+$body-background: #fff;
 
 $react-red: #c05b4d;
 $react-blue: #00d5fe;
@@ -24,6 +27,6 @@ $react-blue: #00d5fe;
 @import "components/navbar/navbar";
 @import "components/not-found/not-found";
 
-body {
-  background: #f9f9f9;
-}
+@import "./styles/codemirror.css";
+@import "./styles/eiffel.css";
+@import "./styles/playground.css";

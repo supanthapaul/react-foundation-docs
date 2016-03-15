@@ -1,4 +1,5 @@
 import React from 'react';
+import Playground from 'component-playground';
 import {
   Row,
   Column,
@@ -10,9 +11,9 @@ export const ThumbnailDocs = () => (
     <Row>
       <Column large={12}>
         <h2>Thumbnail</h2>
-        <div>
-          <Thumbnail src="https://unsplash.it/200" alt="Picture from unsplash.it"/>
-        </div>
+        <Playground codeText={require('raw!../examples/thumbnail/basics')}
+                    scope={{ React, Thumbnail }}
+                    theme="eiffel"/>
       </Column>
     </Row>
   </section>

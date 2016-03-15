@@ -1,4 +1,5 @@
 import React from 'react';
+import Playground from 'component-playground';
 import {
   Colors,
   Row,
@@ -14,20 +15,21 @@ export const BadgeDocs = () => (
         <h2>Badge</h2>
         <div>
           <h3>Basics</h3>
-          <Badge>1</Badge>
+          <Playground codeText={require('raw!../examples/badge/basics')}
+                      scope={{ React, Badge }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Coloring</h3>
-          <Badge color={Colors.SECONDARY}>2</Badge>
-          <Badge color={Colors.SUCCESS}>3</Badge>
-          <Badge color={Colors.ALERT}>A</Badge>
-          <Badge color={Colors.WARNING}>B</Badge>
+          <Playground codeText={require('raw!../examples/badge/colors')}
+                      scope={{ React, Colors, Badge }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>With Icons</h3>
-          <Badge color={Colors.INFO}><Icon name="fi-share"/></Badge>
-          <Badge color={Colors.SUCCESS}><Icon name="fi-check"/></Badge>
-          <Badge color={Colors.WARNING}><Icon name="fi-wrench"/></Badge>
+          <Playground codeText={require('raw!../examples/badge/icons')}
+                      scope={{ React, Colors, Badge, Icon }}
+                      theme="eiffel"/>
         </div>
       </Column>
     </Row>

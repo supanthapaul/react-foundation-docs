@@ -1,4 +1,5 @@
 import React from 'react';
+import Playground from 'component-playground';
 import {
   InputTypes,
   Sizes,
@@ -14,24 +15,27 @@ export const SwitchDocs = () => (
         <h2>Switch</h2>
         <div>
           <h3>Basics</h3>
-          <Switch/>
+          <Playground codeText={require('raw!../examples/switch/basics')}
+                      scope={{ React, Switch }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Radio Switch</h3>
-          <Switch input={{ type: InputTypes.RADIO, name: 'testGroup', defaultChecked: true }}/>
-          <Switch input={{ type: InputTypes.RADIO, name: 'testGroup' }}/>
-          <Switch input={{ type: InputTypes.RADIO, name: 'testGroup' }}/>
+          <Playground codeText={require('raw!../examples/switch/radio')}
+                      scope={{ React, InputTypes, Switch }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Sizing Classes</h3>
-          <Switch size={Sizes.TINY}/>
-          <Switch size={Sizes.SMALL}/>
-          <Switch size={Sizes.LARGE}/>
+          <Playground codeText={require('raw!../examples/switch/sizes')}
+                      scope={{ React, Sizes, Switch }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Inner Labels</h3>
-          <p>Do you like me?</p>
-          <Switch size={Sizes.LARGE} active={{ text: 'Yes' }} inactive={{ text: 'No' }}/>
+          <Playground codeText={require('raw!../examples/switch/inner-label')}
+                      scope={{ React, Sizes, Switch }}
+                      theme="eiffel"/>
         </div>
       </Column>
     </Row>

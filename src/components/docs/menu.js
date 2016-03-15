@@ -1,4 +1,5 @@
 import React from 'react';
+import Playground from 'component-playground';
 import {
   Row,
   Column,
@@ -16,109 +17,51 @@ export const MenuDocs = () => (
         <h2>Menu</h2>
         <div>
           <h3>Basic Menu</h3>
-          <Menu>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-            <MenuItem><a>Four</a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/basics')}
+                      scope={{ React, Menu, MenuItem }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Item Alignment</h3>
-          <Menu alignment={Alignments.RIGHT}>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-            <MenuItem><a>Four</a></MenuItem>
-          </Menu>
-          <Menu alignment={Alignments.CENTER}>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-            <MenuItem><a>Four</a></MenuItem>
-          </Menu>
-          <Menu isExpanded>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-          </Menu>
-          <Menu isExpanded>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-          </Menu>
-          <Menu isExpanded>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-            <MenuItem><a>Four</a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/item-alignment')}
+                      scope={{ React, Alignments, Menu, MenuItem }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Vertical Menu</h3>
-          <Menu isVertical>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-            <MenuItem><a>Four</a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/vertical')}
+                      scope={{ React, Menu, MenuItem }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Simple Style</h3>
-          <Menu isSimple>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-            <MenuItem><a>Four</a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/simple')}
+                      scope={{ React, Menu, MenuItem }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Nested Style</h3>
-          <Menu isVertical>
-            <MenuItem>
-              <a>One</a>
-              <Menu isVertical isNested>
-                <MenuItem><a>One</a></MenuItem>
-                <MenuItem><a>Two</a></MenuItem>
-                <MenuItem><a>Three</a></MenuItem>
-                <MenuItem><a>Four</a></MenuItem>
-              </Menu>
-            </MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-            <MenuItem><a>Four</a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/nested')}
+                      scope={{ React, Menu, MenuItem }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Active State</h3>
-          <Menu>
-            <MenuItem isActive><a>Home</a></MenuItem>
-            <MenuItem><a>About</a></MenuItem>
-            <MenuItem><a>Nachos</a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/active-state')}
+                      scope={{ React, Menu, MenuItem }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Text</h3>
-          <Menu>
-            <MenuText>Site Title</MenuText>
-            <MenuItem><a>One</a></MenuItem>
-            <MenuItem><a>Two</a></MenuItem>
-            <MenuItem><a>Three</a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/text')}
+                      scope={{ React, Menu, MenuText, MenuItem }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Icons</h3>
-          <Menu>
-            <MenuItem><a><Icon name="fi-list"/> <span>One</span></a></MenuItem>
-            <MenuItem><a><Icon name="fi-list"/> <span>Two</span></a></MenuItem>
-            <MenuItem><a><Icon name="fi-list"/> <span>Three</span></a></MenuItem>
-            <MenuItem><a><Icon name="fi-list"/> <span>Four</span></a></MenuItem>
-          </Menu>
-          <Menu iconsOnTop>
-            <MenuItem><a><Icon name="fi-list"/> <span>One</span></a></MenuItem>
-            <MenuItem><a><Icon name="fi-list"/> <span>Two</span></a></MenuItem>
-            <MenuItem><a><Icon name="fi-list"/> <span>Three</span></a></MenuItem>
-            <MenuItem><a><Icon name="fi-list"/> <span>Four</span></a></MenuItem>
-          </Menu>
+          <Playground codeText={require('raw!../examples/menu/icons')}
+                      scope={{ React, Icon, Menu, MenuItem }}
+                      theme="eiffel"/>
         </div>
       </Column>
     </Row>

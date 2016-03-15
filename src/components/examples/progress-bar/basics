@@ -1,0 +1,4 @@
+<div className="progress-basics-example">
+  <Progress tabIndex="0" value={0}/>
+  <Progress tabIndex="0" value={50}/>
+</div>

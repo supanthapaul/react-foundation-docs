@@ -14,14 +14,14 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  devtool: 'source-map',
+  // devtool: 'source-map',
   module: {
-    preLoaders: [
-      {
-        test: /\.jsx?$/,
-        loader: 'source-map'
-      }
-    ],
+    // preLoaders: [
+    //   {
+    //     test: /\.jsx?$/,
+    //     loader: 'source-map'
+    //   }
+    // ],
     loaders: [
       {
         test: /\.jsx?$/,
@@ -35,6 +35,10 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: 'style!css!sass?sourceMap'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,

@@ -1,0 +1,3 @@
+<div className="badge-basics-example">
+  <Badge>1</Badge>
+</div>

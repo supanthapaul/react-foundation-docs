@@ -1,4 +1,5 @@
 import React from 'react';
+import Playground from 'component-playground';
 import {
   Colors,
   Sizes,
@@ -15,44 +16,33 @@ export const ButtonDocs = () => (
         <h2>Button</h2>
         <div>
           <h3>Basics</h3>
-          <Link>Learn More</Link>
-          <Link>View All Features</Link>
-          <Button color={Colors.SUCCESS}>Save</Button>
-          <Button color={Colors.ALERT}>Delete</Button>
+          <Playground codeText={require('raw!../examples/button/basics')}
+                      scope={{ React, Colors, Link, Button }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Sizing</h3>
-          <Link size={Sizes.TINY}>So Tiny</Link>
-          <Link size={Sizes.SMALL}>So Small</Link>
-          <Link>So Basic</Link>
-          <Link size={Sizes.LARGE}>So Large</Link>
-          <Link isExpanded>Such Expand</Link>
-          <Link size={Sizes.TINY} isExpanded>Wow, Small Expand</Link>
+          <Playground codeText={require('raw!../examples/button/sizes')}
+                      scope={{ React, Sizes, Link }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Coloring</h3>
-          <Link color={Colors.PRIMARY}>Primary Color</Link>
-          <Link color={Colors.SECONDARY}>Secondary Color</Link>
-          <Link color={Colors.SUCCESS}>Success Color</Link>
-          <Link color={Colors.ALERT}>Alert Color</Link>
-          <Link color={Colors.WARNING}>Warning Color</Link>
-          <Link isDisabled>Disabled Button</Link>
+          <Playground codeText={require('raw!../examples/button/colors')}
+                      scope={{ React, Colors, Link }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Hollow Style</h3>
-          <Button color={Colors.PRIMARY} isHollow>Primary Color</Button>
-          <Button color={Colors.SECONDARY} isHollow>Secondary Color</Button>
-          <Button color={Colors.SUCCESS} isHollow>Success Color</Button>
-          <Button color={Colors.ALERT} isHollow>Alert Color</Button>
-          <Button color={Colors.WARNING} isHollow>Warning Color</Button>
+          <Playground codeText={require('raw!../examples/button/hollow')}
+                      scope={{ React, Colors, Button }}
+                      theme="eiffel"/>
         </div>
         <div>
           <h3>Dropdown Arrows</h3>
-          <Button size={Sizes.TINY} isDropdown>Dropdown Button</Button>
-          <Button size={Sizes.SMALL} isDropdown>Dropdown Button</Button>
-          <Button isDropdown>Dropdown Button</Button>
-          <Button size={Sizes.LARGE} isDropdown>Dropdown Button</Button>
-          <Button isExpanded isDropdown>Dropdown Button</Button>
+          <Playground codeText={require('raw!../examples/button/dropdown-arrows')}
+                      scope={{ React, Sizes, Button }}
+                      theme="eiffel"/>
         </div>
       </Column>
     </Row>
