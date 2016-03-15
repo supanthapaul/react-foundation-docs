@@ -1,9 +1,10 @@
 import React from 'react';
 import {
+  InputTypes,
+  Sizes,
   Row,
   Column,
   Switch,
-  SwitchSizes
 } from 'react-foundation';
 
 export const SwitchDocs = () => (
@@ -17,20 +18,20 @@ export const SwitchDocs = () => (
         </div>
         <div>
           <h3>Radio Switch</h3>
-          <Switch input={{ type: 'radio', name: 'testGroup', defaultChecked: true }}/>
-          <Switch input={{ type: 'radio', name: 'testGroup' }}/>
-          <Switch input={{ type: 'radio', name: 'testGroup' }}/>
+          <Switch input={{ type: InputTypes.RADIO, name: 'testGroup', defaultChecked: true }}/>
+          <Switch input={{ type: InputTypes.RADIO, name: 'testGroup' }}/>
+          <Switch input={{ type: InputTypes.RADIO, name: 'testGroup' }}/>
         </div>
         <div>
           <h3>Sizing Classes</h3>
-          <Switch size={SwitchSizes.TINY}/>
-          <Switch size={SwitchSizes.SMALL}/>
-          <Switch size={SwitchSizes.LARGE}/>
+          <Switch size={Sizes.TINY}/>
+          <Switch size={Sizes.SMALL}/>
+          <Switch size={Sizes.LARGE}/>
         </div>
         <div>
           <h3>Inner Labels</h3>
           <p>Do you like me?</p>
-          <Switch size={SwitchSizes.LARGE} active={{ text: 'Yes' }} inactive={{ text: 'No' }}/>
+          <Switch size={Sizes.LARGE} active={{ text: 'Yes' }} inactive={{ text: 'No' }}/>
         </div>
       </Column>
     </Row>

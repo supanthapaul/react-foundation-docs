@@ -1,13 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Hind);
 
-$foundation-palette: (
-  primary: #c05b4d,
-  secondary: #00d5fe,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #ec5840,
-);
-
 @import "../node_modules/foundation-sites/scss/foundation";
 
 $header-font-family: 'Montserrat', sans-serif;
@@ -15,11 +7,19 @@ $body-font-family: 'Hind', sans-serif;
 
 $topbar-background: #222;
 
+$react-red: #c05b4d;
+$react-blue: #00d5fe;
+
+// TODO: Enable this when Foundation fixes the top-bar when global-flexbox is set to true.
+// See: https://github.com/zurb/foundation-sites/issues/8325
+//$global-flexbox: true;
+
 @include foundation-progress-element;
 @include foundation-flex-grid;
 @include foundation-flex-classes;
 @include foundation-everything;
 
+@import "components/docs/docs";
 @import "components/home/home";
 @import "components/navbar/navbar";
 @import "components/not-found/not-found";

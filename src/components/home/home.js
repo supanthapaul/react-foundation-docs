@@ -1,9 +1,9 @@
 import React from 'react';
 import {
+  Sizes,
   Row,
   Column,
   Link,
-  ButtonSizes,
 } from 'react-foundation';
 import ButtonDocs from '../docs/button';
 import ButtonGroupDocs from '../docs/button-group';
@@ -12,6 +12,7 @@ import MenuDocs from '../docs/menu';
 import PaginationDocs from '../docs/pagination';
 import BreadcrumbsDocs from '../docs/breadcrumbs';
 import CalloutDocs from '../docs/callout';
+import MediaObjectDocs from '../docs/media-object';
 import BadgeDocs from '../docs/badge';
 import FlexVideoDocs from '../docs/flex-video';
 import LabelDocs from '../docs/label';
@@ -26,7 +27,7 @@ export const Home = () => (
           <h1>React + Foundation</h1>
           <p className="mission">Foundation as React components</p>
           <div className="buttons">
-            <Link href="//github.com/nordsoftware/react-foundation" size={ButtonSizes.LARGE}>Get started</Link>
+            <Link href="//github.com/nordsoftware/react-foundation" size={Sizes.LARGE}>Get started</Link>
           </div>
         </Column>
       </Row>
@@ -39,6 +40,7 @@ export const Home = () => (
       <PaginationDocs/>
       <BreadcrumbsDocs/>
       <CalloutDocs/>
+      <MediaObjectDocs/>
       <BadgeDocs/>
       <FlexVideoDocs/>
       <LabelDocs/>

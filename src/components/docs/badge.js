@@ -1,10 +1,10 @@
 import React from 'react';
 import {
+  Colors,
   Row,
   Column,
   Icon,
   Badge,
-  BadgeColors
 } from 'react-foundation';
 
 export const BadgeDocs = () => (
@@ -18,16 +18,16 @@ export const BadgeDocs = () => (
         </div>
         <div>
           <h3>Coloring</h3>
-          <Badge color={BadgeColors.SECONDARY}>2</Badge>
-          <Badge color={BadgeColors.SUCCESS}>3</Badge>
-          <Badge color={BadgeColors.ALERT}>A</Badge>
-          <Badge color={BadgeColors.WARNING}>B</Badge>
+          <Badge color={Colors.SECONDARY}>2</Badge>
+          <Badge color={Colors.SUCCESS}>3</Badge>
+          <Badge color={Colors.ALERT}>A</Badge>
+          <Badge color={Colors.WARNING}>B</Badge>
         </div>
         <div>
           <h3>With Icons</h3>
-          <Badge color={BadgeColors.INFO}><Icon name="fi-share"/></Badge>
-          <Badge color={BadgeColors.SUCCESS}><Icon name="fi-check"/></Badge>
-          <Badge color={BadgeColors.WARNING}><Icon name="fi-wrench"/></Badge>
+          <Badge color={Colors.INFO}><Icon name="fi-share"/></Badge>
+          <Badge color={Colors.SUCCESS}><Icon name="fi-check"/></Badge>
+          <Badge color={Colors.WARNING}><Icon name="fi-wrench"/></Badge>
         </div>
       </Column>
     </Row>

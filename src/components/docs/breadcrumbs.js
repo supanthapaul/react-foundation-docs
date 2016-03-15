@@ -3,7 +3,7 @@ import {
   Row,
   Column,
   Breadcrumbs,
-  BreadcrumbItem
+  BreadcrumbItem,
 } from 'react-foundation';
 
 export const BreadcrumbsDocs = () => (

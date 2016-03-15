@@ -1,10 +1,10 @@
 import React from 'react';
 import {
+  Colors,
   Row,
   Column,
   Icon,
   Label,
-  LabelColors
 } from 'react-foundation';
 
 export const LabelDocs = () => (
@@ -18,16 +18,16 @@ export const LabelDocs = () => (
         </div>
         <div>
           <h3>Coloring</h3>
-          <Label color={LabelColors.SECONDARY}>Secondary Label</Label>
-          <Label color={LabelColors.SUCCESS}>Success Label</Label>
-          <Label color={LabelColors.ALERT}>Alert Label</Label>
-          <Label color={LabelColors.WARNING}>Warning Label</Label>
+          <Label color={Colors.SECONDARY}>Secondary Label</Label>
+          <Label color={Colors.SUCCESS}>Success Label</Label>
+          <Label color={Colors.ALERT}>Alert Label</Label>
+          <Label color={Colors.WARNING}>Warning Label</Label>
         </div>
         <div>
           <h3>With Icons</h3>
-          <Label color={LabelColors.ALERT}><Icon name="fi-circle"/> Alert Label</Label>
-          <Label color={LabelColors.WARNING}><Icon name="fi-x"/> Warning Label</Label>
-          <Label color={LabelColors.INFO}><Icon name="fi-widget"/> Info Label</Label>
+          <Label color={Colors.ALERT}><Icon name="fi-circle"/> Alert Label</Label>
+          <Label color={Colors.WARNING}><Icon name="fi-x"/> Warning Label</Label>
+          <Label color={Colors.INFO}><Icon name="fi-widget"/> Info Label</Label>
         </div>
       </Column>
     </Row>

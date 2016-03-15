@@ -2,11 +2,12 @@ import React from 'react';
 import {
   Row,
   Column,
+  Inline,
   Pagination,
   PaginationPrevious,
   PaginationItem,
   PaginationEllipsis,
-  PaginationNext
+  PaginationNext,
 } from 'react-foundation';
 
 export const PaginationDocs = () => (
@@ -17,29 +18,29 @@ export const PaginationDocs = () => (
         <div>
           <h3>Basics</h3>
           <Pagination aria-label="Pagination">
-            <PaginationPrevious isDisabled>Previous <span className="show-for-sr">page</span></PaginationPrevious>
-            <PaginationItem isCurrent><span className="show-for-sr">You're on page</span> 1</PaginationItem>
+            <PaginationPrevious isDisabled>Previous <Inline showForSr>page</Inline></PaginationPrevious>
+            <PaginationItem isCurrent><Inline showForSr>You're on page</Inline> 1</PaginationItem>
             <PaginationItem><a aria-label="Page 2">2</a></PaginationItem>
             <PaginationItem><a aria-label="Page 3">3</a></PaginationItem>
             <PaginationItem><a aria-label="Page 4">4</a></PaginationItem>
             <PaginationEllipsis/>
             <PaginationItem><a aria-label="Page 12">12</a></PaginationItem>
             <PaginationItem><a aria-label="Page 13">13</a></PaginationItem>
-            <PaginationNext><a aria-label="Next page">Next <span className="show-for-sr">page</span></a></PaginationNext>
+            <PaginationNext><a aria-label="Next page">Next <Inline showForSr>page</Inline></a></PaginationNext>
           </Pagination>
         </div>
         <div>
           <h3>Centered</h3>
           <Pagination aria-label="Pagination" isCentered>
-            <PaginationPrevious isDisabled>Previous <span className="show-for-sr">page</span></PaginationPrevious>
-            <PaginationItem isCurrent><span className="show-for-sr">You're on page</span> 1</PaginationItem>
+            <PaginationPrevious isDisabled>Previous <Inline showForSr>page</Inline></PaginationPrevious>
+            <PaginationItem isCurrent><Inline showForSr>You're on page</Inline> 1</PaginationItem>
             <PaginationItem><a aria-label="Page 2">2</a></PaginationItem>
             <PaginationItem><a aria-label="Page 3">3</a></PaginationItem>
             <PaginationItem><a aria-label="Page 4">4</a></PaginationItem>
             <PaginationEllipsis/>
             <PaginationItem><a aria-label="Page 12">12</a></PaginationItem>
             <PaginationItem><a aria-label="Page 13">13</a></PaginationItem>
-            <PaginationNext><a aria-label="Next page">Next <span className="show-for-sr">page</span></a></PaginationNext>
+            <PaginationNext><a aria-label="Next page">Next <Inline showForSr>page</Inline></a></PaginationNext>
           </Pagination>
         </div>
       </Column>

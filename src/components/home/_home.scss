@@ -7,7 +7,7 @@
   }
 
   h1 {
-    color: $secondary-color;
+    color: $react-blue;
   }
 
   .mission {
@@ -19,6 +19,10 @@
 
   .buttons {
     margin-top: 50px;
+
+    > a {
+      background: $react-red;
+    }
   }
 
   .content {

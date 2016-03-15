@@ -1,10 +1,10 @@
 import React from 'react';
 import {
+  Colors,
   Row,
   Column,
   Progress,
-  ProgressColors,
-  NativeProgress
+  NativeProgress,
 } from 'react-foundation';
 
 export const ProgressBarDocs = () => (
@@ -19,10 +19,10 @@ export const ProgressBarDocs = () => (
         </div>
         <div>
           <h3>Colors</h3>
-          <Progress color={ProgressColors.SECONDARY} tabIndex="0" min={0} max={100} value={25} valueText="25 percent"/>
-          <Progress color={ProgressColors.SUCCESS} value={50}/>
-          <Progress color={ProgressColors.WARNING} value={50}/>
-          <Progress color={ProgressColors.ALERT} value={75}/>
+          <Progress color={Colors.SECONDARY} tabIndex="0" min={0} max={100} value={25} valueText="25 percent"/>
+          <Progress color={Colors.SUCCESS} value={50}/>
+          <Progress color={Colors.WARNING} value={50}/>
+          <Progress color={Colors.ALERT} value={75}/>
         </div>
         <div>
           <h3>With Text</h3>
@@ -31,10 +31,10 @@ export const ProgressBarDocs = () => (
         <div>
           <h3>Native Progress</h3>
           <NativeProgress max={100} value={75}/>
-          <NativeProgress color={ProgressColors.SECONDARY} max={100} value={75}/>
-          <NativeProgress color={ProgressColors.SUCCESS} max={100} value={75}/>
-          <NativeProgress color={ProgressColors.WARNING} max={100} value={75}/>
-          <NativeProgress color={ProgressColors.ALERT} max={100} value={75}/>
+          <NativeProgress color={Colors.SECONDARY} max={100} value={75}/>
+          <NativeProgress color={Colors.SUCCESS} max={100} value={75}/>
+          <NativeProgress color={Colors.WARNING} max={100} value={75}/>
+          <NativeProgress color={Colors.ALERT} max={100} value={75}/>
         </div>
       </Column>
     </Row>

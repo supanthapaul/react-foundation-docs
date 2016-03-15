@@ -22,6 +22,9 @@ export const Navbar = () => (
           <TopBarLeft>
             <Menu>
               <MenuItem>
+                <Link to="/" title="Coming soon!">Getting Started</Link>
+              </MenuItem>
+              <MenuItem>
                 <Link to="/" title="Coming soon!">Docs</Link>
               </MenuItem>
             </Menu>

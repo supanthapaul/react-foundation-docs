@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Row,
   Column,
-  FlexVideo
+  FlexVideo,
 } from 'react-foundation';
 
 export const FlexVideoDocs = () => (

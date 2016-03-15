@@ -6,7 +6,7 @@ import {
   Menu,
   MenuItem,
   MenuText,
-  MenuAlignments
+  Alignments
 } from 'react-foundation';
 
 export const MenuDocs = () => (
@@ -25,13 +25,13 @@ export const MenuDocs = () => (
         </div>
         <div>
           <h3>Item Alignment</h3>
-          <Menu alignment={MenuAlignments.RIGHT}>
+          <Menu alignment={Alignments.RIGHT}>
             <MenuItem><a>One</a></MenuItem>
             <MenuItem><a>Two</a></MenuItem>
             <MenuItem><a>Three</a></MenuItem>
             <MenuItem><a>Four</a></MenuItem>
           </Menu>
-          <Menu alignment={MenuAlignments.CENTER}>
+          <Menu alignment={Alignments.CENTER}>
             <MenuItem><a>One</a></MenuItem>
             <MenuItem><a>Two</a></MenuItem>
             <MenuItem><a>Three</a></MenuItem>

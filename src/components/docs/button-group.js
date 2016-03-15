@@ -1,12 +1,12 @@
 import React from 'react';
 import {
+  Breakpoints,
+  Colors,
+  Sizes,
   Row,
   Column,
   Link,
-  ButtonColors,
   ButtonGroup,
-  ButtonGroupColors,
-  ButtonGroupSizes
 } from 'react-foundation';
 
 export const ButtonGroupDocs = () => (
@@ -24,7 +24,7 @@ export const ButtonGroupDocs = () => (
         </div>
         <div>
           <h3>Sizing</h3>
-          <ButtonGroup size={ButtonGroupSizes.SMALL}>
+          <ButtonGroup size={Sizes.SMALL}>
             <Link>Small</Link>
             <Link>Button</Link>
             <Link>Group</Link>
@@ -33,12 +33,12 @@ export const ButtonGroupDocs = () => (
         <div>
           <h3>Coloring</h3>
           <ButtonGroup>
-            <Link color={ButtonColors.SECONDARY}>View</Link>
-            <Link color={ButtonColors.SUCCESS}>Edit</Link>
-            <Link color={ButtonColors.WARNING}>Share</Link>
-            <Link color={ButtonColors.ALERT}>Delete</Link>
+            <Link color={Colors.SECONDARY}>View</Link>
+            <Link color={Colors.SUCCESS}>Edit</Link>
+            <Link color={Colors.WARNING}>Share</Link>
+            <Link color={Colors.ALERT}>Delete</Link>
           </ButtonGroup>
-          <ButtonGroup color={ButtonGroupColors.SECONDARY}>
+          <ButtonGroup color={Colors.SECONDARY}>
             <Link>Harder</Link>
             <Link>Better</Link>
             <Link>Faster</Link>
@@ -55,7 +55,7 @@ export const ButtonGroupDocs = () => (
         </div>
         <div>
           <h3>Stacking</h3>
-          <ButtonGroup stackOnSmall>
+          <ButtonGroup stackFor={Breakpoints.SMALL}>
             <Link>How</Link>
             <Link>Low</Link>
             <Link>Can</Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Row,
   Column,
-  Thumbnail
+  Thumbnail,
 } from 'react-foundation';
 
 export const ThumbnailDocs = () => (
