@@ -18,7 +18,7 @@ export const FlexVideoDocs = () => (
             <iframe width="420" height="315" src="https://www.youtube.com/embed/aiBt44rrslw" frameBorder="0" allowFullScreen></iframe>
           </FlexVideo>
           <FlexVideo isWidescreen isVimeo>
-            <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameBorder="0" allowFullScreen></iframe>
+            <iframe src="//player.vimeo.com/video/60122989" width="400" height="225" frameBorder="0" allowFullScreen></iframe>
           </FlexVideo>
         </div>
       </Column>
