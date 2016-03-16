@@ -1,0 +1,22 @@
+<div className="grid-block-example">
+  <Row upOnSmall={1} upOnMedium={2} upOnLarge={4}>
+    <Column className="column">
+      <Thumbnail src="//unsplash.it/300" alt=""/>
+    </Column>
+    <Column className="column">
+      <Thumbnail src="//unsplash.it/300" alt=""/>
+    </Column>
+    <Column className="column">
+      <Thumbnail src="//unsplash.it/300" alt=""/>
+    </Column>
+    <Column className="column">
+      <Thumbnail src="//unsplash.it/300" alt=""/>
+    </Column>
+    <Column className="column">
+      <Thumbnail src="//unsplash.it/300" alt=""/>
+    </Column>
+    <Column className="column">
+      <Thumbnail src="//unsplash.it/300" alt=""/>
+    </Column>
+  </Row>
+</div>

@@ -1,0 +1,33 @@
+<div className="grid-basics-example">
+  <Row className="row display">
+    <Column small={2} large={4}>4 columns</Column>
+    <Column small={4} large={4}>4 columns</Column>
+    <Column small={6} large={4}>4 columns</Column>
+  </Row>
+  <Row className="row display">
+    <Column large={3}>3 columns</Column>
+    <Column large={6}>6 columns</Column>
+    <Column large={3}>3 columns</Column>
+  </Row>
+  <Row className="row display">
+    <Column small={6} large={2}>2 columns</Column>
+    <Column small={6} large={8}>8 columns</Column>
+    <Column small={12} large={2}>2 columns</Column>
+  </Row>
+  <Row className="row display">
+    <Column small={3}>3 columns</Column>
+    <Column small={9}>9 columns</Column>
+  </Row>
+  <Row className="row display">
+    <Column large={4}>4 columns</Column>
+    <Column large={8}>8 columns</Column>
+  </Row>
+  <Row className="row display">
+    <Column small={6} large={5}>5 columns</Column>
+    <Column small={6} large={7}>7 columns</Column>
+  </Row>
+  <Row className="row display">
+    <Column large={6}>6 columns</Column>
+    <Column large={6}>6 columns</Column>
+  </Row>
+</div>

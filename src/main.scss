@@ -13,13 +13,7 @@ $body-background: #fff;
 $react-red: #c05b4d;
 $react-blue: #00d5fe;
 
-// TODO: Enable this when Foundation fixes the top-bar when global-flexbox is set to true.
-// See: https://github.com/zurb/foundation-sites/issues/8325
-//$global-flexbox: true;
-
 @include foundation-progress-element;
-@include foundation-flex-grid;
-@include foundation-flex-classes;
 @include foundation-everything;
 
 @import "components/docs/docs";
@@ -30,3 +24,32 @@ $react-blue: #00d5fe;
 @import "./styles/codemirror.css";
 @import "./styles/eiffel.css";
 @import "./styles/playground.css";
+
+.row.display-end {
+  background: #fff;
+  font-size: 11px;
+  margin-bottom: 10px;
+  line-height: 2rem;
+  border: solid 1px #c6c6c6;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.row.display {
+  background: #eee;
+  font-size: 11px;
+  margin-bottom: 10px;
+  line-height: 2rem;
+  border: solid 1px #c6c6c6;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.row.display .columns:nth-child(2), .row.display .columns.small-centered, .row.display .columns.large-centered {
+  background: #e1e1e1;
+}
+
+.row.display-end .columns {
+  background: #e1e1e1;
+  border-left: 1px solid #c6c6c6;
+}

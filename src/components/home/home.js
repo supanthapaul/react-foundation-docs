@@ -17,6 +17,7 @@ import BadgeDocs from '../docs/badge';
 import FlexVideoDocs from '../docs/flex-video';
 import LabelDocs from '../docs/label';
 import ProgressBarDocs from '../docs/progress-bar';
+import GridDocs from '../docs/grid';
 
 export const Home = () => (
   <div className="home">
@@ -44,6 +45,7 @@ export const Home = () => (
       <FlexVideoDocs/>
       <LabelDocs/>
       <ProgressBarDocs/>
+      <GridDocs/>
     </div>
   </div>
 );
