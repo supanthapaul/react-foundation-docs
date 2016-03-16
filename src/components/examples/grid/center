@@ -1,0 +1,14 @@
+<div className="grid-center-example">
+  <Row className="row display">
+    <Column small={3} centerOnSmall>3 centered</Column>
+  </Row>
+  <Row className="row display">
+    <Column small={6} centerOnLarge>6 centered, large</Column>
+  </Row>
+  <Row className="row display">
+    <Column small={9} centerOnSmall uncenterOnLarge>9 centered, small</Column>
+  </Row>
+  <Row className="row display">
+    <Column small={11} centerOnSmall>11 centered</Column>
+  </Row>
+</div>

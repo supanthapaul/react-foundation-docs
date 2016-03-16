@@ -20,7 +20,7 @@
     <a href="#">It's dangerous to go alone, take this.</a>
   </Callout>
   <Callout color={Colors.ALERT}>
-    <h5>This is a alert panel</h5>
+    <h5>This is an alert panel</h5>
     <p>It has an easy to override visual style, and is appropriately subdued.</p>
     <a href="#">It's dangerous to go alone, take this.</a>
   </Callout>

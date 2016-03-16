@@ -1,0 +1,18 @@
+<div className="grid-collapse-example">
+  <Row uncollapseOnMedium collapseOnLarge>
+    <Column small={6}>
+      <Callout color={Colors.SECONDARY}>
+        <Block showOnlyFor={Breakpoints.SMALL}>On a small screen, I have gutters!</Block>
+        <Block showOnlyFor={Breakpoints.MEDIUM}>On a medium screen, I have gutters!</Block>
+        <Block showFor={Breakpoints.LARGE}>On a large screen, I have no gutters!</Block>
+      </Callout>
+    </Column>
+    <Column small={6}>
+      <Callout color={Colors.SECONDARY}>
+        <Block showOnlyFor={Breakpoints.SMALL}>On a small screen, I have gutters!</Block>
+        <Block showOnlyFor={Breakpoints.MEDIUM}>On a medium screen, I have gutters!</Block>
+        <Block showFor={Breakpoints.LARGE}>On a large screen, I have no gutters!</Block>
+      </Callout>
+    </Column>
+  </Row>
+</div>
