@@ -29,6 +29,9 @@ export const Navbar = () => (
           <TopBarRight>
             <Menu>
               <MenuItem>
+                <a href="//npmjs.org/package/react-foundation" target="_blank">NPM</a>
+              </MenuItem>
+              <MenuItem>
                 <a href="//github.com/nordsoftware/react-foundation" target="_blank">GitHub</a>
               </MenuItem>
             </Menu>
