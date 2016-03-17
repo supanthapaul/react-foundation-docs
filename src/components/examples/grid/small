@@ -1,9 +1,9 @@
 <div className="grid-small-example">
-  <Row className="row display">
+  <Row className="display">
     <Column small={2}>2 columns</Column>
     <Column small={10}>10 columns</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column small={3}>3 columns</Column>
     <Column small={9}>9 columns</Column>
   </Row>

@@ -1,5 +1,5 @@
 <div className="grid-nested-example">
-  <Row className="row display">
+  <Row className="display">
     <Column small={8}>8
       <Row>
         <Column small={8}>8 Nested

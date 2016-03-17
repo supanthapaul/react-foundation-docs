@@ -1,4 +1,4 @@
 <div className="grid-fluid-row-example">
-  <Row className="row display" isExpanded>
+  <Row className="display" isExpanded>
   </Row>
 </div>

@@ -1,9 +1,9 @@
 <div className="grid-medium-example">
-  <Row className="row display">
+  <Row className="display">
     <Column medium={2}>2 columns</Column>
     <Column medium={10}>10 columns</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column medium={3}>3 columns</Column>
     <Column medium={9}>9 columns</Column>
   </Row>
