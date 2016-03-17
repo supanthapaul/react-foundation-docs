@@ -13,7 +13,7 @@
   </Row>
   <Row className="row display">
     <Column small={5} pushOnSmall={7} medium={7} pushOnMedium={5}>7</Column>
-    <Column small={7} pushOnSmall={5} medium={5} pushOnMedium={7}>5, last</Column>
+    <Column small={7} pullOnSmall={5} medium={5} pullOnMedium={7}>5, last</Column>
   </Row>
   <Row className="row display">
     <Column medium={6} pushOnMedium={6}>6</Column>
