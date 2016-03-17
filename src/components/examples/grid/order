@@ -1,21 +1,21 @@
 <div className="grid-order-example">
-  <Row className="row display">
+  <Row className="display">
     <Column small={10} pushOnSmall={2}>10</Column>
     <Column small={2} pullOnSmall={10}>2, last</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column large={9} pushOnLarge={3}>9</Column>
     <Column large={3} pullOnLarge={9}>3, last</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column large={8} pushOnLarge={4}>8</Column>
     <Column large={4} pullOnLarge={8}>4, last</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column small={5} pushOnSmall={7} medium={7} pushOnMedium={5}>7</Column>
-    <Column small={7} pushOnSmall={5} medium={5} pushOnMedium={7}>5, last</Column>
+    <Column small={7} pullOnSmall={5} medium={5} pullOnMedium={7}>5, last</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column medium={6} pushOnMedium={6}>6</Column>
     <Column medium={6} pullOnMedium={6}>6, last</Column>
   </Row>

@@ -1,18 +1,18 @@
 <div className="grid-offset-example">
-  <Row className="row display">
+  <Row className="display">
     <Column large={1}>1</Column>
     <Column large={11}>11</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column large={1}>1</Column>
-    <Column large={10} offset={{ large: 1 }}>10, offset 1</Column>
+    <Column large={10} offsetOnLarge={1}>10, offset 1</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column large={1}>1</Column>
-    <Column large={9} offset={{ large: 2 }}>9, offset 2</Column>
+    <Column large={9} offsetOnLarge={2}>9, offset 2</Column>
   </Row>
-  <Row className="row display">
+  <Row className="display">
     <Column large={1}>1</Column>
-    <Column large={8} offset={{ large: 3 }}>8, offset 3</Column>
+    <Column large={8} offsetOnLarge={3}>8, offset 3</Column>
   </Row>
 </div>
