@@ -15,7 +15,7 @@ namespace :ui do
 	task :install do
 		on roles(:ui) do
 			within release_path do
-				execute :npm3, "install --silent"
+				execute :npm, "install --silent"
 			end
 		end
 	end
@@ -24,7 +24,7 @@ namespace :ui do
 	task :build do
 		on roles(:ui) do
 			within release_path do
-				execute :npm3, "run dist"
+				execute :npm, "run dist"
 			end
 		end
 	end
