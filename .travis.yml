@@ -4,6 +4,8 @@ language: node_js
 node_js:
   - "6"
 
+install: true
+
 before_script:
   - pip install --user awscli
   - npm install
