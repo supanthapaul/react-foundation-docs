@@ -1,8 +1,9 @@
 import React from 'react';
 import {
   Sizes,
-  Row,
-  Column,
+  GridContainer,
+  Grid,
+  Cell,
   Link,
 } from 'react-foundation';
 import ButtonDocs from '../docs/button';
@@ -22,30 +23,32 @@ import GridDocs from '../docs/grid';
 export const Home = () => (
   <div className="home">
     <div className="hero">
-      <Row>
-        <Column large={12}>
+      <Grid>
+        <Cell large={12}>
           <h1>React + Foundation</h1>
           <p className="mission">Foundation as React components</p>
           <div className="buttons">
             <Link href="//github.com/nordsoftware/react-foundation" size={Sizes.LARGE}>Get started</Link>
           </div>
-        </Column>
-      </Row>
+        </Cell>
+      </Grid>
     </div>
     <div className="content">
-      <ButtonDocs/>
-      <ButtonGroupDocs/>
-      <SwitchDocs/>
-      <MenuDocs/>
-      <PaginationDocs/>
-      <BreadcrumbsDocs/>
-      <CalloutDocs/>
-      <MediaObjectDocs/>
-      <BadgeDocs/>
-      <FlexVideoDocs/>
-      <LabelDocs/>
-      <ProgressBarDocs/>
-      <GridDocs/>
+      <GridContainer>
+        <ButtonDocs />
+        <ButtonGroupDocs />
+        <SwitchDocs />
+        <MenuDocs />
+        <PaginationDocs />
+        <BreadcrumbsDocs />
+        <CalloutDocs />
+        <MediaObjectDocs />
+        <BadgeDocs />
+        <FlexVideoDocs />
+        <LabelDocs />
+        <ProgressBarDocs />
+        <GridDocs />
+      </GridContainer>
     </div>
   </div>
 );

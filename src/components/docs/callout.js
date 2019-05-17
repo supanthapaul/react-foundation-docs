@@ -4,15 +4,15 @@ import Playground from 'component-playground';
 import {
   Colors,
   Sizes,
-  Row,
-  Column,
+  Grid,
+  Cell,
   Callout,
 } from 'react-foundation';
 
 export const CalloutDocs = () => (
   <section className="callout-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Callout</h2>
         <div>
           <h3>Basics</h3>
@@ -32,8 +32,8 @@ export const CalloutDocs = () => (
                       scope={{ React, Sizes, Callout }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

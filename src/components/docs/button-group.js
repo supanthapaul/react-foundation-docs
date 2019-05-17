@@ -4,16 +4,16 @@ import {
   Breakpoints,
   Colors,
   Sizes,
-  Row,
-  Column,
+  Grid,
+  Cell,
   Link,
   ButtonGroup,
 } from 'react-foundation';
 
 export const ButtonGroupDocs = () => (
   <section className="button-group-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Button Group</h2>
         <div>
           <h3>Basics</h3>
@@ -51,8 +51,8 @@ export const ButtonGroupDocs = () => (
                       scope={{ React, Breakpoints, ButtonGroup, Link }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import Playground from 'component-playground';
 import {
-  Row,
-  Column,
+  Grid,
+  Cell,
   Icon,
   Menu,
   MenuItem,
@@ -12,8 +12,8 @@ import {
 
 export const MenuDocs = () => (
   <section className="menu-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Menu</h2>
         <div>
           <h3>Basic Menu</h3>
@@ -63,8 +63,8 @@ export const MenuDocs = () => (
                       scope={{ React, Icon, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

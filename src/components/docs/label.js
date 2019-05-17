@@ -2,16 +2,16 @@ import React from 'react';
 import Playground from 'component-playground';
 import {
   Colors,
-  Row,
-  Column,
+  Grid,
+  Cell,
   Icon,
   Label,
 } from 'react-foundation';
 
 export const LabelDocs = () => (
   <section className="label-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Label</h2>
         <div>
           <h3>Basics</h3>
@@ -31,8 +31,8 @@ export const LabelDocs = () => (
                       scope={{ React, Colors, Label, Icon }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

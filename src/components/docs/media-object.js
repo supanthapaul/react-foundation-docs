@@ -1,8 +1,8 @@
 import React from 'react';
 import Playground from 'component-playground';
 import {
-  Row,
-  Column,
+  Grid,
+  Cell,
   MediaObject,
   MediaObjectSection,
   Thumbnail,
@@ -10,8 +10,8 @@ import {
 
 export const MediaObjectDocs = () => (
   <section className="media-object-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Media Object</h2>
         <div>
           <h3>Basics</h3>
@@ -31,8 +31,8 @@ export const MediaObjectDocs = () => (
                       scope={{ React, MediaObject, MediaObjectSection, Thumbnail }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

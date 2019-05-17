@@ -2,16 +2,16 @@ import React from 'react';
 import Playground from 'component-playground';
 import {
   Colors,
-  Row,
-  Column,
+  Grid,
+  Cell,
   Icon,
   Badge,
 } from 'react-foundation';
 
 export const BadgeDocs = () => (
   <section className="badge-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Badge</h2>
         <div>
           <h3>Basics</h3>
@@ -31,8 +31,8 @@ export const BadgeDocs = () => (
                       scope={{ React, Colors, Badge, Icon }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import Playground from 'component-playground';
 import {
-  Row,
-  Column,
+  Grid,
+  Cell,
   Inline,
   Pagination,
   PaginationPrevious,
@@ -13,8 +13,8 @@ import {
 
 export const PaginationDocs = () => (
   <section className="pagination-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Pagination</h2>
         <div>
           <h3>Basics</h3>
@@ -28,8 +28,8 @@ export const PaginationDocs = () => (
                       scope={{ React, Inline, Pagination, PaginationPrevious, PaginationItem, PaginationEllipsis, PaginationNext }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 
