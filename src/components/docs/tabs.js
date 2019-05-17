@@ -1,5 +1,6 @@
 import React from 'react';
 import Playground from 'component-playground';
+import { StatelessComponentWarning } from '../app/warnings';
 import {
   Grid,
   Cell,
@@ -14,10 +15,7 @@ export const TabsDocs = () => (
     <Grid>
       <Cell large={12}>
         <h2>Tabs</h2>
-        <p>
-          Like the Accordion component, the Tabs component is stateless, so you'll have wrap it in your own component in order to
-          track the state and open the right tab when a tab is clicked.
-        </p>
+        <StatelessComponentWarning />
         <Playground codeText={require('raw!../examples/tabs/basics')}
           scope={{ React, Tabs, TabItem, TabsContent, TabPanel }}
           theme="eiffel" />
