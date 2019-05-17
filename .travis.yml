@@ -1,0 +1,20 @@
+dist: xenial
+language: node_js
+node_js:
+  - "6"
+
+branches:
+  only:
+    - master
+
+install: true
+
+before_script:
+  - pip install --user awscli
+  - npm install
+
+script:
+  - npm run dist
+  - aws s3 sync --delete dist/ s3://$S3_BUCKET_NAME/ --metadata-directive REPLACE --cache-control max-age=31536000
+  - aws s3 cp dist/index.html s3://$S3_BUCKET_NAME/ --metadata-directive REPLACE --cache-control no-cache
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'
