@@ -19,6 +19,9 @@ import FlexVideoDocs from '../docs/flex-video';
 import LabelDocs from '../docs/label';
 import ProgressBarDocs from '../docs/progress-bar';
 import GridDocs from '../docs/grid';
+import AccordionDocs from '../docs/accordion';
+import TabsDocs from '../docs/tabs';
+import RevealDocs from '../docs/reveal';
 
 export const Home = () => (
   <div className="home">
@@ -47,6 +50,9 @@ export const Home = () => (
         <FlexVideoDocs />
         <LabelDocs />
         <ProgressBarDocs />
+        <AccordionDocs />
+        <TabsDocs />
+        <RevealDocs />
         <GridDocs />
       </GridContainer>
     </div>
