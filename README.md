@@ -1,6 +1,6 @@
 # React + Foundation documentation
 
-[![Build Status](https://travis-ci.org/digiaonline/react-foundation-docs.svg?branch=develop)](https://travis-ci.org/digiaonline/react-foundation-docs)
+[![Build Status](https://travis-ci.org/digiaonline/react-foundation-docs.svg?branch=master)](https://travis-ci.org/digiaonline/react-foundation-docs)
 
 Documentation for [React + Foundation](http://github.com/nordsoftware/react-foundation-docs).
 
