@@ -3,15 +3,15 @@ import Playground from 'component-playground';
 import {
   InputTypes,
   Sizes,
-  Row,
-  Column,
+  Grid,
+  Cell,
   Switch,
 } from 'react-foundation';
 
 export const SwitchDocs = () => (
   <section className="switch-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Switch</h2>
         <div>
           <h3>Basics</h3>
@@ -37,8 +37,8 @@ export const SwitchDocs = () => (
                       scope={{ React, Sizes, Switch }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

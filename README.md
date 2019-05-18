@@ -1,8 +1,8 @@
 # React + Foundation documentation
 
-[![Build Status](https://travis-ci.org/digiaonline/react-foundation-docs.svg?branch=develop)](https://travis-ci.org/digiaonline/react-foundation-docs)
+[![Build Status](https://travis-ci.org/digiaonline/react-foundation-docs.svg?branch=master)](https://travis-ci.org/digiaonline/react-foundation-docs)
 
-Documentation for [React + Foundation](http://github.com/nordsoftware/react-foundation-docs).
+Documentation for [React + Foundation](http://github.com/nordsoftware/react-foundation).
 
 ## Installation
 
@@ -30,16 +30,10 @@ Run the following command to build the distribution build:
 npm run dist
 ```
 
-## Test suite
+## Linting
 
-Run the following command to run the test suite
-
-```
-npm test
-```
-
-Alternatively you can run the test suite in watch-mode:
+Run the following command to run lint the code:
 
 ```
-npm run test:watch
+npm lint
 ```

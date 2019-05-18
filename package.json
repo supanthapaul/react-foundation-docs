@@ -6,9 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --colors --history-api-fallback --config webpack/development.js",
     "dist": "webpack -p --config webpack/production.js",
-    "lint": "eslint src",
-    "test": "mocha --compilers js:babel-core/register --require test/index.js --recursive",
-    "test:watch": "npm run test -- --watch"
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -21,9 +19,6 @@
   },
   "homepage": "https://github.com/nordsoftware/react-foundation-docs#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-immutable": "^1.5.3",
-    "mocha": "^2.4.5",
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
@@ -52,7 +47,7 @@
     "raw-loader": "^0.5.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-foundation": "^0.6.0",
+    "react-foundation": "^0.9.6",
     "react-hot-loader": "^1.3.0",
     "react-redux": "^4.0.6",
     "react-router": "^2.0.0-rc4",
