@@ -2,16 +2,16 @@ import React from 'react';
 import Playground from 'component-playground';
 import {
   Colors,
-  Row,
-  Column,
+  Grid,
+  Cell,
   Progress,
   NativeProgress,
 } from 'react-foundation';
 
 export const ProgressBarDocs = () => (
   <section className="progress-bar-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Progress Bar</h2>
         <div>
           <h3>Basics</h3>
@@ -37,8 +37,8 @@ export const ProgressBarDocs = () => (
                       scope={{ React, Colors, NativeProgress }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

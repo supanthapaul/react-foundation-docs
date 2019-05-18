@@ -1,12 +1,12 @@
 <div className="grid-end-example">
-  <Row className="display-end">
-    <Column medium={3}>3</Column>
-    <Column medium={3}>3</Column>
-    <Column medium={3}>3</Column>
-  </Row>
-  <Row className="display-end">
-    <Column medium={3}>3</Column>
-    <Column medium={3}>3</Column>
-    <Column medium={3} isLast>3 end</Column>
-  </Row>
+  <Grid className="display-end">
+    <Cell medium={3}>3</Cell>
+    <Cell medium={3}>3</Cell>
+    <Cell medium={3}>3</Cell>
+  </Grid>
+  <Grid className="display-end">
+    <Cell medium={3}>3</Cell>
+    <Cell medium={3}>3</Cell>
+    <Cell medium={3} isLast>3 end</Cell>
+  </Grid>
 </div>

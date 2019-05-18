@@ -3,16 +3,16 @@ import Playground from 'component-playground';
 import {
   Colors,
   Sizes,
-  Row,
-  Column,
+  Grid,
+  Cell,
   Link,
   Button,
 } from 'react-foundation';
 
 export const ButtonDocs = () => (
   <section className="button-docs">
-    <Row>
-      <Column large={12}>
+    <Grid>
+      <Cell large={12}>
         <h2>Button</h2>
         <div>
           <h3>Basics</h3>
@@ -44,8 +44,8 @@ export const ButtonDocs = () => (
                       scope={{ React, Sizes, Button }}
                       theme="eiffel"/>
         </div>
-      </Column>
-    </Row>
+      </Cell>
+    </Grid>
   </section>
 );
 

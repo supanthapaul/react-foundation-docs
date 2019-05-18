@@ -1,16 +1,16 @@
 <div className="grid-nested-example">
-  <Row className="display">
-    <Column small={8}>8
-      <Row>
-        <Column small={8}>8 Nested
-          <Row>
-            <Column small={8}>8 Nested Again</Column>
-            <Column small={4}>4</Column>
-          </Row>
-        </Column>
-        <Column small={4}>4</Column>
-      </Row>
-    </Column>
-    <Column small={4}>4</Column>
-  </Row>
+  <Grid className="display">
+    <Cell small={8}>8
+      <Grid>
+        <Cell small={8}>8 Nested
+          <Grid>
+            <Cell small={8}>8 Nested Again</Cell>
+            <Cell small={4}>4</Cell>
+          </Grid>
+        </Cell>
+        <Cell small={4}>4</Cell>
+      </Grid>
+    </Cell>
+    <Cell small={4}>4</Cell>
+  </Grid>
 </div>
