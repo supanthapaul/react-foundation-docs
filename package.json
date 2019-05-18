@@ -28,7 +28,7 @@
     "babel-core": "^6.2.1",
     "babel-eslint": "^5.0.0",
     "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.1.18",
     "component-playground": "^1.2.0",
     "css-loader": "^0.23.0",
@@ -65,7 +65,7 @@
   },
   "babel": {
     "presets": [
-      "es2015",
+      "env",
       "react"
     ]
   }
