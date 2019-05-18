@@ -5,6 +5,10 @@ node_js:
 
 install: true
 
+cache:
+  directories:
+    - node_modules
+
 stages:
   - lint
   - build
