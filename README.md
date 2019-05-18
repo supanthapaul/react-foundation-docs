@@ -30,16 +30,10 @@ Run the following command to build the distribution build:
 npm run dist
 ```
 
-## Test suite
+## Linting
 
-Run the following command to run the test suite
-
-```
-npm test
-```
-
-Alternatively you can run the test suite in watch-mode:
+Run the following command to run lint the code:
 
 ```
-npm run test:watch
+npm lint
 ```
