@@ -1,4 +1,3 @@
-var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -11,11 +10,6 @@ module.exports = Object.assign({}, {
       inject: 'body',
       template: 'src/main.html'
     }),
-    new webpack.optimize.OccurenceOrderPlugin()
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compressor: {
-    //     warnings: false
-    //   }
-    // })
+    new webpack.optimize.OccurenceOrderPlugin(),
   ]
 }, require('./config'));

@@ -22,10 +22,6 @@ module.exports = {
         exclude: /(node_modules|src\/client\/vendor)/
       },
       {
-        test: /\.json$/,
-        loader: 'json'
-      },
-      {
         test: /\.scss$/,
         loader: 'style!css!sass?sourceMap'
       },
