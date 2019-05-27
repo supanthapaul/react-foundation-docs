@@ -17,7 +17,7 @@ export const AccordionDocs = () => (
         <div>
           <h2>Accordion</h2>
           <StatelessComponentWarning />
-          <Playground codeText={require('raw!../examples/accordion/basics')}
+          <Playground codeText={require('raw-loader!../examples/accordion/basics').default}
             scope={{ React, Accordion, AccordionItem, AccordionTitle, AccordionContent }}
             theme="eiffel" />
         </div>

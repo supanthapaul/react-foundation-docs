@@ -11,7 +11,7 @@ export const ThumbnailDocs = () => (
     <Grid>
       <Cell large={12}>
         <h2>Thumbnail</h2>
-        <Playground codeText={require('raw!../examples/thumbnail/basics')}
+        <Playground codeText={require('raw-loader!../examples/thumbnail/basics').default}
                     scope={{ React, Thumbnail }}
                     theme="eiffel"/>
       </Cell>

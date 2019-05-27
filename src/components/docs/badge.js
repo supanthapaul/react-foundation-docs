@@ -15,19 +15,19 @@ export const BadgeDocs = () => (
         <h2>Badge</h2>
         <div>
           <h3>Basics</h3>
-          <Playground codeText={require('raw!../examples/badge/basics')}
+          <Playground codeText={require('raw-loader!../examples/badge/basics').default}
                       scope={{ React, Badge }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Coloring</h3>
-          <Playground codeText={require('raw!../examples/badge/colors')}
+          <Playground codeText={require('raw-loader!../examples/badge/colors').default}
                       scope={{ React, Colors, Badge }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>With Icons</h3>
-          <Playground codeText={require('raw!../examples/badge/icons')}
+          <Playground codeText={require('raw-loader!../examples/badge/icons').default}
                       scope={{ React, Colors, Badge, Icon }}
                       theme="eiffel"/>
         </div>

@@ -15,25 +15,25 @@ export const SwitchDocs = () => (
         <h2>Switch</h2>
         <div>
           <h3>Basics</h3>
-          <Playground codeText={require('raw!../examples/switch/basics')}
+          <Playground codeText={require('raw-loader!../examples/switch/basics').default}
                       scope={{ React, Switch }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Radio Switch</h3>
-          <Playground codeText={require('raw!../examples/switch/radio')}
+          <Playground codeText={require('raw-loader!../examples/switch/radio').default}
                       scope={{ React, InputTypes, Switch }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Sizing Classes</h3>
-          <Playground codeText={require('raw!../examples/switch/sizes')}
+          <Playground codeText={require('raw-loader!../examples/switch/sizes').default}
                       scope={{ React, Sizes, Switch }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Inner Labels</h3>
-          <Playground codeText={require('raw!../examples/switch/inner-label')}
+          <Playground codeText={require('raw-loader!../examples/switch/inner-label').default}
                       scope={{ React, Sizes, Switch }}
                       theme="eiffel"/>
         </div>

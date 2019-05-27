@@ -15,19 +15,19 @@ export const LabelDocs = () => (
         <h2>Label</h2>
         <div>
           <h3>Basics</h3>
-          <Playground codeText={require('raw!../examples/label/basics')}
+          <Playground codeText={require('raw-loader!../examples/label/basics').default}
                       scope={{ React, Label }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Coloring</h3>
-          <Playground codeText={require('raw!../examples/label/colors')}
+          <Playground codeText={require('raw-loader!../examples/label/colors').default}
                       scope={{ React, Colors, Label }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>With Icons</h3>
-          <Playground codeText={require('raw!../examples/label/icons')}
+          <Playground codeText={require('raw-loader!../examples/label/icons').default}
                       scope={{ React, Colors, Label, Icon }}
                       theme="eiffel"/>
         </div>

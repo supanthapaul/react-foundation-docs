@@ -16,19 +16,19 @@ export const CalloutDocs = () => (
         <h2>Callout</h2>
         <div>
           <h3>Basics</h3>
-          <Playground codeText={require('raw!../examples/callout/basics')}
+          <Playground codeText={require('raw-loader!../examples/callout/basics').default}
                       scope={{ React, Callout }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Coloring</h3>
-          <Playground codeText={require('raw!../examples/callout/colors')}
+          <Playground codeText={require('raw-loader!../examples/callout/colors').default}
                       scope={{ React, Colors, Callout }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Sizing</h3>
-          <Playground codeText={require('raw!../examples/callout/sizes')}
+          <Playground codeText={require('raw-loader!../examples/callout/sizes').default}
                       scope={{ React, Sizes, Callout }}
                       theme="eiffel"/>
         </div>
