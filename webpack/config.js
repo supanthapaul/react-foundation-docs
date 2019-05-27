@@ -12,13 +12,13 @@ module.exports = {
     chunkFilename: '[id].chunk.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js']
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|src\/client\/vendor)/,
+        test: /\.js$/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
