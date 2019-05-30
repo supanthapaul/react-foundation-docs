@@ -2,18 +2,14 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 import { App } from './components/app/app';
 import { Home } from './components/home/home';
 import { NotFound } from './components/not-found/not-found';
 import './main.scss';
 
 render(
-  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="*" component={NotFound}/>
-    </Route>
-  </Router>,
+  <App>
+    {window.location.pathname === '/' ? <Home /> : <NotFound />}
+  </App>,
   document.getElementById('root')
 );
