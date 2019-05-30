@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --colors --history-api-fallback --config webpack/development.js",
     "dist": "webpack -p --config webpack/production.js",
+    "serve": "serve dist/",
     "lint": "eslint src"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "node": "^10"
   },
   "devDependencies": {
+    "serve": "^11.0.1",
     "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
