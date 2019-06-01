@@ -11,7 +11,7 @@ export const FlexVideoDocs = () => (
     <Grid>
       <Cell large={12}>
         <h2>Flex Video</h2>
-        <Playground codeText={require('raw!../examples/flex-video/basics')}
+        <Playground codeText={require('raw-loader!../examples/flex-video/basics').default}
                     scope={{ React, FlexVideo }}
                     theme="eiffel"/>
       </Cell>

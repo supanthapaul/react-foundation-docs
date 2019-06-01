@@ -30,6 +30,12 @@ Run the following command to build the distribution build:
 npm run dist
 ```
 
+Run the following command to serve the distribution build on `http://localhost:5000/`:
+
+```
+npm run serve
+```
+
 ## Linting
 
 Run the following command to run lint the code:

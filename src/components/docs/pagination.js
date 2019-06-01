@@ -18,13 +18,13 @@ export const PaginationDocs = () => (
         <h2>Pagination</h2>
         <div>
           <h3>Basics</h3>
-          <Playground codeText={require('raw!../examples/pagination/basics')}
+          <Playground codeText={require('raw-loader!../examples/pagination/basics').default}
                       scope={{ React, Inline, Pagination, PaginationPrevious, PaginationItem, PaginationEllipsis, PaginationNext }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Centered</h3>
-          <Playground codeText={require('raw!../examples/pagination/center')}
+          <Playground codeText={require('raw-loader!../examples/pagination/center').default}
                       scope={{ React, Inline, Pagination, PaginationPrevious, PaginationItem, PaginationEllipsis, PaginationNext }}
                       theme="eiffel"/>
         </div>

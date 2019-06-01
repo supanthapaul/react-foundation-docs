@@ -15,19 +15,19 @@ export const MediaObjectDocs = () => (
         <h2>Media Object</h2>
         <div>
           <h3>Basics</h3>
-          <Playground codeText={require('raw!../examples/media-object/basics')}
+          <Playground codeText={require('raw-loader!../examples/media-object/basics').default}
                       scope={{ React, MediaObject, MediaObjectSection, Thumbnail }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Section Alignment</h3>
-          <Playground codeText={require('raw!../examples/media-object/section-alignment')}
+          <Playground codeText={require('raw-loader!../examples/media-object/section-alignment').default}
                       scope={{ React, MediaObject, MediaObjectSection, Thumbnail }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Stack on Small</h3>
-          <Playground codeText={require('raw!../examples/media-object/stack')}
+          <Playground codeText={require('raw-loader!../examples/media-object/stack').default}
                       scope={{ React, MediaObject, MediaObjectSection, Thumbnail }}
                       theme="eiffel"/>
         </div>

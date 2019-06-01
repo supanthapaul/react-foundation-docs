@@ -12,38 +12,73 @@ module.exports = {
     chunkFilename: '[id].chunk.js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js']
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.jsx?$/,
-        loader: 'babel?cacheDirectory=true!eslint',
-        exclude: /(node_modules|src\/client\/vendor)/
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true,
+          }
+        }
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!sass?sourceMap'
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ]
       },
       {
         test: /\.css$/,
-        loader: 'style!css'
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,
-        loader: 'url?prefix=img/&limit=5000'
+        use: {
+          'loader': 'url?prefix=img/&limit=5000',
+        }
       },
       {
         test: /\.(mp3|ogg|wav)$/,
-        loader: 'url?prefix=audio/&limit=5000'
+        use: {
+          loader: 'url?prefix=audio/&limit=5000',
+        }
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url?prefix=font/&limit=5000&mimetype=application/font-woff'
+        use: {
+          loader: 'url?prefix=font/&limit=5000&mimetype=application/font-woff',
+        }
       },
       {
         test: /\.(ttf|eot|svg)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file'
+        use: {
+          loader: 'file'
+        }
       }
     ]
   }

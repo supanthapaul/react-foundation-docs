@@ -15,7 +15,7 @@ export const RevealDocs = () => (
         <h2>Reveal</h2>
         <StatelessComponentWarning />
         <Reveal isLarge={true}>Foo</Reveal>
-        <Playground codeText={require('raw!../examples/reveal/basics')}
+        <Playground codeText={require('raw-loader!../examples/reveal/basics').default}
           scope={{ React, Reveal, Button }}
           theme="eiffel" />
       </Cell>

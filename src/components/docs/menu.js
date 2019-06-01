@@ -17,49 +17,49 @@ export const MenuDocs = () => (
         <h2>Menu</h2>
         <div>
           <h3>Basic Menu</h3>
-          <Playground codeText={require('raw!../examples/menu/basics')}
+          <Playground codeText={require('raw-loader!../examples/menu/basics').default}
                       scope={{ React, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Item Alignment</h3>
-          <Playground codeText={require('raw!../examples/menu/item-alignment')}
+          <Playground codeText={require('raw-loader!../examples/menu/item-alignment').default}
                       scope={{ React, Alignments, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Vertical Menu</h3>
-          <Playground codeText={require('raw!../examples/menu/vertical')}
+          <Playground codeText={require('raw-loader!../examples/menu/vertical').default}
                       scope={{ React, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Simple Style</h3>
-          <Playground codeText={require('raw!../examples/menu/simple')}
+          <Playground codeText={require('raw-loader!../examples/menu/simple').default}
                       scope={{ React, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Nested Style</h3>
-          <Playground codeText={require('raw!../examples/menu/nested')}
+          <Playground codeText={require('raw-loader!../examples/menu/nested').default}
                       scope={{ React, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Active State</h3>
-          <Playground codeText={require('raw!../examples/menu/active-state')}
+          <Playground codeText={require('raw-loader!../examples/menu/active-state').default}
                       scope={{ React, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Text</h3>
-          <Playground codeText={require('raw!../examples/menu/text')}
+          <Playground codeText={require('raw-loader!../examples/menu/text').default}
                       scope={{ React, Menu, MenuText, MenuItem }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Icons</h3>
-          <Playground codeText={require('raw!../examples/menu/icons')}
+          <Playground codeText={require('raw-loader!../examples/menu/icons').default}
                       scope={{ React, Icon, Menu, MenuItem }}
                       theme="eiffel"/>
         </div>

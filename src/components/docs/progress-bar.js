@@ -15,25 +15,25 @@ export const ProgressBarDocs = () => (
         <h2>Progress Bar</h2>
         <div>
           <h3>Basics</h3>
-          <Playground codeText={require('raw!../examples/progress-bar/basics')}
+          <Playground codeText={require('raw-loader!../examples/progress-bar/basics').default}
                       scope={{ React, Progress }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Colors</h3>
-          <Playground codeText={require('raw!../examples/progress-bar/colors')}
+          <Playground codeText={require('raw-loader!../examples/progress-bar/colors').default}
                       scope={{ React, Colors, Progress }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>With Text</h3>
-          <Playground codeText={require('raw!../examples/progress-bar/with-text')}
+          <Playground codeText={require('raw-loader!../examples/progress-bar/with-text').default}
                       scope={{ React, Progress }}
                       theme="eiffel"/>
         </div>
         <div>
           <h3>Native Progress</h3>
-          <Playground codeText={require('raw!../examples/progress-bar/native')}
+          <Playground codeText={require('raw-loader!../examples/progress-bar/native').default}
                       scope={{ React, Colors, NativeProgress }}
                       theme="eiffel"/>
         </div>

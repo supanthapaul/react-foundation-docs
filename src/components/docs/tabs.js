@@ -16,7 +16,7 @@ export const TabsDocs = () => (
       <Cell large={12}>
         <h2>Tabs</h2>
         <StatelessComponentWarning />
-        <Playground codeText={require('raw!../examples/tabs/basics')}
+        <Playground codeText={require('raw-loader!../examples/tabs/basics').default}
           scope={{ React, Tabs, TabItem, TabsContent, TabPanel }}
           theme="eiffel" />
       </Cell>

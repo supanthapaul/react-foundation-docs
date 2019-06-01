@@ -13,7 +13,7 @@ export const BreadcrumbsDocs = () => (
     <Grid>
       <Cell large={12}>
         <h2>Breadcrumbs</h2>
-        <Playground codeText={require('raw!../examples/breadcrumbs/basics')}
+        <Playground codeText={require('raw-loader!../examples/breadcrumbs/basics').default}
                     scope={{ React, Inline, Breadcrumbs, BreadcrumbItem }}
                     theme="eiffel"/>
       </Cell>
