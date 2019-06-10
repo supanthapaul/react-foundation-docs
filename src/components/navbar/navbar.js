@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 import {
   ResponsiveNavigation,
   TopBarTitle,
@@ -15,7 +14,7 @@ export const Navbar = () => (
       <Menu>
         <MenuItem>
           <TopBarTitle>
-            <Link to="/">React + Foundation</Link>
+            <a href="/">React + Foundation</a>
           </TopBarTitle>
         </MenuItem>
       </Menu>
