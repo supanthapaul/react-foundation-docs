@@ -10,18 +10,17 @@ cache:
     - node_modules
 
 stages:
-  - lint
-  - build
+  - lint-and-build
   - name: deploy
     if: branch = master
 
 jobs:
   include:
-    - stage: lint
+    - stage: lint-and-build
       script:
         - npm install
         - npm run lint
-    - stage: build
+    - stage: lint-and-build
       script:
         - npm install
         - npm run dist
