@@ -10,25 +10,30 @@ cache:
     - node_modules
 
 stages:
-  - lint-and-build
-  - name: deploy
-    if: branch = master
+  - "Lint and build"
+  - "Deploy"
 
 jobs:
   include:
-    - stage: lint-and-build
+    - stage: "Lint and build"
       script:
         - npm install
         - npm run lint
-    - stage: lint-and-build
+
+    - stage: "Lint and build"
       script:
         - npm install
         - npm run dist
-    - stage: deploy
+
+    - stage: "Deploy"
       script:
-        - pip install --user awscli
         - npm install
         - npm run dist
-        - aws s3 sync --delete dist/ s3://$S3_BUCKET_NAME/ --metadata-directive REPLACE --cache-control max-age=31536000
-        - aws s3 cp dist/index.html s3://$S3_BUCKET_NAME/ --metadata-directive REPLACE --cache-control no-cache
-        - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        local_dir: dist
+        on:
+          branch: deploy-to-gh-pages # TODO: master
