@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var getConfig = require('./config');
 
 module.exports = Object.assign({}, {
   mode: 'development',
@@ -11,4 +10,4 @@ module.exports = Object.assign({}, {
     }),
     new webpack.HotModuleReplacementPlugin(),
   ]
-}, getConfig());
+}, require('./config'));

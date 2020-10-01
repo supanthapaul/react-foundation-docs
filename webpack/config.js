@@ -1,17 +1,13 @@
 var path = require('path');
 
-module.exports = (publicPath = "/") => ({
+module.exports = {
   entry: {
-		app: path.resolve(__dirname, '../src/main.js'),
-		// this creates a duplicate output bundle for local serving as the app expects output bundle to be in the 'react-foundation-docs/' sub-directory
-		// You can comment it out to push it to Github Pages, this is purely for the local serving of the dist directory
-		'react-foundation-docs/app': path.resolve(__dirname, '../src/main.js'),
+    app: path.resolve(__dirname, '../src/main.js')
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-		filename: '[name].[hash].js',
-		// sets the output public path to be under the publicPath passed
-    publicPath: publicPath,
+    filename: '[name].[hash].js',
+    publicPath: '/',
     sourceMapFilename: '[name].[hash].js.map',
     chunkFilename: '[id].chunk.js'
   },
@@ -86,4 +82,4 @@ module.exports = (publicPath = "/") => ({
       }
     ]
   }
-});
+};
