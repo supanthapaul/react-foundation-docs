@@ -11,4 +11,4 @@ module.exports = Object.assign({}, {
     }),
     new webpack.HotModuleReplacementPlugin(),
   ]
-}, getConfig());	// gets the config with default public path ('/')
+}, getConfig());  // gets the config with default public path ('/')

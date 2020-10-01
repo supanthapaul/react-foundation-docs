@@ -9,4 +9,4 @@ module.exports = Object.assign({}, {
       template: 'src/main.html'
     }),
   ]
-}, getConfig("react-foundation-docs/"));	// sets the public path to be under '/react-foundation-docs/' for production
+}, getConfig('react-foundation-docs/'));  // sets the public path to be under '/react-foundation-docs/' for production
